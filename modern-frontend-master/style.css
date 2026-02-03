@@ -4,9 +4,9 @@
 
 :root {
     /* Color Palette */
-    --laravel-red: #F74D1C;
-    --laravel-red-dark: #d23e12;
-    --laravel-red-light: #ff6838;
+    --primary: #1F2937;
+    --primary-dark: #111827;
+    --primary-light: #374151;
 
     --white: #FFFFFF;
     --gray-50: #F9FAFB;
@@ -156,7 +156,7 @@ section {
 }
 
 .nav-link:hover {
-    color: var(--laravel-red);
+    color: var(--primary);
 }
 
 .nav-cta .btn {
@@ -238,9 +238,9 @@ h6 {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, var(--laravel-red) 0%, var(--laravel-red-dark) 100%);
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
     color: var(--white);
-    box-shadow: 0 4px 15px rgba(247, 77, 28, 0.3);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
 }
 
 .btn-outline {
@@ -251,28 +251,28 @@ h6 {
 }
 
 .btn-outline:hover {
-    color: var(--laravel-red);
-    border-color: var(--laravel-red);
+    color: var(--primary);
+    border-color: var(--primary);
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
 }
 
 .hero .btn-primary {
-    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
-    color: var(--gray-900);
-    box-shadow: 0 4px 20px rgba(255, 215, 0, 0.5);
+    background: linear-gradient(135deg, #2b2b2b 0%, #181818 100%);
+    color: white;
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.5);
     font-weight: 700;
 }
 
 .hero .btn-primary:hover {
-    background: linear-gradient(135deg, #FFA500 0%, #FF8C00 100%);
+    background: linear-gradient(135deg, #2b2b2b 0%, #181818 100%);
     transform: translateY(-3px) scale(1.02);
-    box-shadow: 0 8px 30px rgba(255, 215, 0, 0.6);
+    box-shadow: 0 8px 30px rgba(255, 255, 255, 0.6);
 }
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(247, 77, 28, 0.4);
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.4);
 }
 
 .btn-large {
@@ -288,11 +288,11 @@ h6 {
 
     0%,
     100% {
-        box-shadow: 0 4px 15px rgba(247, 77, 28, 0.3);
+        box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
     }
 
     50% {
-        box-shadow: 0 4px 30px rgba(247, 77, 28, 0.6);
+        box-shadow: 0 4px 30px rgba(193, 193, 193, 0.6);
     }
 }
 
@@ -301,7 +301,7 @@ h6 {
    ============================================ */
 
 .hero {
-    background: linear-gradient(135deg, var(--laravel-red) 0%, var(--laravel-red-dark) 100%);
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
     color: var(--white);
     padding: calc(var(--spacing-4xl) + 80px) 0 var(--spacing-4xl);
     /* Adjusted for sticky navbar */
@@ -336,7 +336,7 @@ h6 {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(24, 24, 24, 0.3);
     padding: var(--spacing-xs) var(--spacing-lg);
     border-radius: 100px;
     font-size: var(--font-size-sm);
@@ -603,14 +603,14 @@ h6 {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: radial-gradient(var(--laravel-red) 1px, transparent 1px);
+    background-image: radial-gradient(var(--primary) 1px, transparent 1px);
     background-size: 30px 30px;
     opacity: 0.05;
 }
 
 .bonus-intro-box {
     background: rgba(255, 255, 255, 0.7);
-    border: 1px solid var(--laravel-red-light);
+    border: 1px solid var(--primary-light);
     padding: var(--spacing-lg);
     border-radius: var(--radius-lg);
     text-align: center;
@@ -624,7 +624,7 @@ h6 {
     position: absolute;
     top: var(--spacing-md);
     right: var(--spacing-md);
-    background: var(--laravel-red);
+    background: var(--primary);
     color: var(--white);
     padding: 4px 12px;
     border-radius: 20px;
@@ -646,8 +646,8 @@ h6 {
 
 .problem-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--spacing-2xl);
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-sm);
     margin-bottom: var(--spacing-3xl);
 }
 
@@ -689,10 +689,10 @@ h6 {
 }
 
 .problem-conclusion {
-    background: linear-gradient(135deg, rgba(247, 77, 28, 0.05) 0%, rgba(247, 77, 28, 0.1) 100%);
+    background: linear-gradient(135deg, rgba(88, 88, 88, 0.05) 0%, rgba(96, 96, 96, 0.1) 100%);
     padding: var(--spacing-2xl);
     border-radius: var(--radius-xl);
-    border-left: 4px solid var(--laravel-red);
+    border-left: 4px solid var(--primary);
     text-align: center;
 }
 
@@ -738,7 +738,7 @@ h6 {
 .stat-number {
     font-size: var(--font-size-4xl);
     font-weight: 800;
-    color: var(--laravel-red);
+    color: var(--primary);
     margin-bottom: var(--spacing-sm);
 }
 
@@ -813,7 +813,7 @@ h6 {
    ============================================ */
 
 .solution {
-    background: #F8F5F5;
+    background: #f1f1f1;
 }
 
 .courses-grid {
@@ -839,7 +839,7 @@ h6 {
 }
 
 .course-card:hover {
-    border-color: var(--laravel-red);
+    border-color: var(--primary);
     transform: translateY(-5px);
     box-shadow: var(--shadow-xl);
 }
@@ -860,7 +860,7 @@ h6 {
     right: var(--spacing-lg);
     width: 50px;
     height: 50px;
-    background: linear-gradient(135deg, var(--laravel-red) 0%, var(--laravel-red-dark) 100%);
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
     color: var(--white);
     border-radius: 50%;
     display: flex;
@@ -966,8 +966,8 @@ h6 {
 }
 
 .btn-syllabus:hover {
-    background: var(--laravel-red);
-    border-color: var(--laravel-red);
+    background: var(--primary);
+    border-color: var(--primary);
     color: var(--white);
     transform: translateY(-2px);
 }
@@ -1021,7 +1021,7 @@ h6 {
 }
 
 .close-modal:hover {
-    color: var(--laravel-red);
+    color: var(--primary);
 }
 
 .modal-title {
@@ -1075,7 +1075,7 @@ h6 {
    ============================================ */
 
 .golden-feature {
-    background: linear-gradient(135deg, rgba(247, 77, 28, 0.05) 0%, rgba(247, 77, 28, 0.02) 100%);
+    background: linear-gradient(135deg, rgba(232, 232, 232, 0.05) 0%, rgba(146, 146, 146, 0.02) 100%);
 }
 
 .feature-content {
@@ -1093,7 +1093,7 @@ h6 {
 }
 
 .qa-header {
-    background: var(--laravel-red);
+    background: var(--primary);
     color: var(--white);
     padding: var(--spacing-lg);
 }
@@ -1165,8 +1165,8 @@ h6 {
 }
 
 .comparison-right {
-    background: linear-gradient(135deg, rgba(247, 77, 28, 0.05) 0%, rgba(247, 77, 28, 0.1) 100%);
-    border: 2px solid var(--laravel-red);
+    background: linear-gradient(135deg, rgba(76, 76, 76, 0.05) 0%, rgba(40, 40, 40, 0.1) 100%);
+    border: 2px solid var(--primary);
 }
 
 .comparison-left h3,
@@ -1205,13 +1205,13 @@ h6 {
 .price-big {
     font-size: var(--font-size-2xl);
     font-weight: 800;
-    color: var(--laravel-red);
+    color: var(--primary);
 }
 
 .comparison-vs {
     font-size: var(--font-size-3xl);
     font-weight: 800;
-    color: var(--laravel-red);
+    color: var(--primary);
     background: var(--white);
     width: 80px;
     height: 80px;
@@ -1223,7 +1223,7 @@ h6 {
 }
 
 .badge {
-    background: var(--laravel-red);
+    background: var(--primary);
     color: var(--white);
     padding: var(--spacing-sm) var(--spacing-md);
     border-radius: var(--radius-md);
@@ -1263,7 +1263,7 @@ h6 {
 .current-price {
     font-size: var(--font-size-4xl);
     font-weight: 800;
-    color: var(--laravel-red);
+    color: var(--primary);
     margin-bottom: var(--spacing-sm);
 }
 
@@ -1281,7 +1281,7 @@ h6 {
    ============================================ */
 
 .cta {
-    background: linear-gradient(135deg, var(--laravel-red) 0%, var(--laravel-red-dark) 100%);
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
     color: var(--white);
 }
 
@@ -1327,7 +1327,7 @@ h6 {
 .cta-current-price {
     font-size: var(--font-size-5xl);
     font-weight: 800;
-    color: var(--laravel-red);
+    color: var(--primary);
 }
 
 .cta-guarantee {
@@ -1355,7 +1355,7 @@ h6 {
     width: 24px;
     height: 24px;
     background: var(--white);
-    color: var(--laravel-red);
+    color: var(--primary);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -1389,7 +1389,7 @@ h6 {
 }
 
 .highlight {
-    color: var(--laravel-red);
+    color: var(--primary);
     font-weight: 700;
 }
 
@@ -1410,7 +1410,7 @@ h6 {
 .countdown-number {
     font-size: var(--font-size-4xl);
     font-weight: 800;
-    color: var(--laravel-red);
+    color: var(--primary);
     margin-bottom: var(--spacing-sm);
 }
 
@@ -1466,6 +1466,10 @@ h6 {
 
     .feature-content {
         grid-template-columns: 1fr;
+    }
+
+    .problem-grid {
+        grid-template-columns: repeat(2, 2fr);
     }
 
     .comparison-container {
@@ -1701,7 +1705,7 @@ h6 {
 }
 
 .faq-question i {
-    color: var(--laravel-red);
+    color: var(--primary);
     transition: transform var(--transition-base);
 }
 
@@ -1784,7 +1788,7 @@ h6 {
 }
 
 .duration-badge i {
-    color: var(--laravel-red);
+    color: var(--primary);
 }
 
 .course-card .syllabus-meta {
@@ -1841,7 +1845,7 @@ h6 {
 
 .accordion-item.active .accordion-icon {
     transform: rotate(180deg);
-    color: var(--laravel-red);
+    color: var(--primary);
 }
 
 .accordion-body {
@@ -1873,7 +1877,7 @@ h6 {
 }
 
 .material-item:hover {
-    color: var(--laravel-red);
+    color: var(--primary);
     background: rgba(247, 77, 28, 0.02);
 }
 
@@ -1890,7 +1894,7 @@ h6 {
 }
 
 .material-item:hover .material-icon {
-    color: var(--laravel-red);
+    color: var(--primary);
 }
 
 .material-duration {

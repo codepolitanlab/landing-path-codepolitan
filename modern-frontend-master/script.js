@@ -349,511 +349,378 @@ window.addEventListener('load', () => {
 // ============================================
 
 const courseData = {
-    'php8': {
-        title: 'Modern PHP 8 & Database Mastery',
-        description: 'Pelajari fondasi utama bahasa pemrograman PHP versi terbaru dan teknik pengelolaan database. Inilah modal utama kamu sebelum menjadi developer profesional.',
+    'js-dasar': {
+        title: 'JavaScript Dasar',
+        description: 'Pelajari fondasi utama bahasa pemrograman JavaScript, dari tipe data hingga fitur-fitur terbaru. Cocok untuk pemula yang ingin memahami konsep dasar JavaScript secara mendalam.',
         syllabus: [
             {
-                topic: "PHP 8 dan MySQL: Panduan CRUD Lengkap untuk Pemula",
+                topic: "Tipe Data Primitif Dan Developer Tools Console",
                 materials: [
-                    { title: "Introduction", duration: "04:14" },
-                    { title: "PHPMyAdmin", duration: "08:12" },
-                    { title: "Create Table", duration: "08:46" },
-                    { title: "Alter Table", duration: "04:41" },
-                    { title: "Insert Data", duration: "13:18" },
-                    { title: "Select", duration: "12:45" },
-                    { title: "Select Filter", duration: "06:51" },
-                    { title: "Update", duration: "11:18" },
-                    { title: "Delete", duration: "04:41" },
-                    { title: "Pengenalan MySQLi", duration: "05:07" },
-                    { title: "Mengkoneksikan database", duration: "12:51" },
-                    { title: "Select Query", duration: "09:00" },
-                    { title: "Menampilkan data", duration: "08:53" },
-                    { title: "Menampilkan data detail", duration: "10:50" },
-                    { title: "Menampilkan data detail", duration: "10:32" },
-                    { title: "Form Tambah Data", duration: "14:33" },
-                    { title: "Insert data", duration: "13:49" },
-                    { title: "Form Update", duration: "12:53" },
-                    { title: "Update", duration: "05:27" },
-                    { title: "Delete", duration: "06:52" },
-                    { title: "Search", duration: "13:56" },
-                    { title: "Pendahuluan & Connection", duration: "08:51" },
-                    { title: "Insert", duration: "10:16" },
-                    { title: "List & Search", duration: "11:09" },
-                    { title: "Detail", duration: "04:46" },
-                    { title: "Update & Delete", duration: "06:17" }
+                    { title: "Tipe Data Primitif Dan Developer Tools Console", duration: "06:11" },
+                    { title: "Tipe Data Numbers", duration: "06:34" },
+                    { title: "Apa Itu Nilai Nan", duration: "03:22" },
+                    { title: "Variabel Dan Kata Kunci Let", duration: "07:23" },
+                    { title: "Memperbarui Nilai Number Di Dalam Variabel", duration: "04:09" },
+                    { title: "Kata Kunci Const Dan Var Untuk Variabel", duration: "04:59" },
+                    { title: "Tipe Data Booleani", duration: "03:31" },
+                    { title: "Tips Memberikan Nama Variabel Seperti Anak Sendiri", duration: "05:22" }
+                ]
+            },
+            {
+                topic: "Tipe Data String dan Lainnya",
+                materials: [
+                    { title: "Mengenal Tipe Data String", duration: "05:49" },
+                    { title: "Penjelasan Index Pada String Dan Panjang Karakter", duration: "08:30" },
+                    { title: "Method-Method Javascript Yang Memudahkan Hidup Kita", duration: "04:46" },
+                    { title: "Method Dan Argument (Parameter)", duration: "05:20" },
+                    { title: "Template Literals Save Your Life", duration: "05:47" },
+                    { title: "Mengenal Null Dan Undefined", duration: "02:54" },
+                    { title: "Mengenal Object Math Dan Angka Acak", duration: "03:51" }
+                ]
+            },
+            {
+                topic: "JavaScript Logic Pembuat Keputusan",
+                materials: [
+                    { title: "Bagaimana Membuat Keputusan Di Dalam Code", duration: "03:10" },
+                    { title: "Operator Pembanding", duration: "04:41" },
+                    { title: "Perbedaan Jumlah Sama Dengan Dua Dan Tiga", duration: "06:19" },
+                    { title: "Console Alert Dan Prompt", duration: "04:27" },
+                    { title: "Menjalankan Javascript Di Dalam File", duration: "06:55" },
+                    { title: "If Statement Pertama Yg Kamu Pelajari", duration: "06:42" },
+                    { title: "Else If Statement Makin Banyak Pilihan", duration: "05:43" },
+                    { title: "Else Adalah Pilihan Terakhir", duration: "04:48" },
+                    { title: "Cek Kondisi Berlapis Lebih Aman", duration: "07:31" },
+                    { title: "Operator Logic And", duration: "05:39" },
+                    { title: "Operator Logic Or", duration: "04:27" },
+                    { title: "Operator Logic Not", duration: "02:44" },
+                    { title: "Switch Sebagai Alternatif If Statement", duration: "05:03" }
+                ]
+            },
+            {
+                topic: "JavaScript Struktur Data Array",
+                materials: [
+                    { title: "Mengenal Struktur Data Array", duration: "08:12" },
+                    { title: "Mendapatkan Nilai Dengan Index Dan Mengubah Isinya", duration: "07:38" },
+                    { title: "Method Array Push Dan Pop", duration: "06:25" },
+                    { title: "Method Array Unshift Dan Shift", duration: "04:22" },
+                    { title: "Beberapa Method Array Yang Sering Digunakan", duration: "08:20" },
+                    { title: "Beberapa Method Array Yang Sering Digunakan Lagi", duration: "08:32" },
+                    { title: "Mengubah Nilai Const Dengan Array", duration: "04:04" },
+                    { title: "Array Multidimensi Atau Nested Array", duration: "04:59" }
+                ]
+            },
+            {
+                topic: "JavaScript Struktur Data Object",
+                materials: [
+                    { title: "Apa Itu Object", duration: "04:47" },
+                    { title: "Cara Membuat Struktur Data Object", duration: "06:17" },
+                    { title: "Cara Memanggil Data Dari Object", duration: "05:18" },
+                    { title: "Cara Membuat Object Berjalan", duration: "03:40" },
+                    { title: "Cara Memanggil Object Di Dalam Array", duration: "03:50" }
+                ]
+            },
+            {
+                topic: "JavaScript Perulangan menggunakan For Loop",
+                materials: [
+                    { title: "Pengenalan Perulangan", duration: "06:47" },
+                    { title: "Contoh Lain Perulangan For", duration: "06:24" },
+                    { title: "Awas Perulangan Tanpa Henti", duration: "02:46" },
+                    { title: "Mendapatkan Data Dari Array Dengan Perulangan", duration: "04:00" },
+                    { title: "Pengenalan Nested Loop", duration: "06:59" },
+                    { title: "Mendapatkan Data Dari Nested Array Dengan Nested Loop", duration: "05:43" },
+                    { title: "Perulangan Menggunakan Perintah While", duration: "04:12" },
+                    { title: "Kata Kunci Break Untuk Memberhentikan Perulangan", duration: "06:04" },
+                    { title: "Membuat Game Tebak Tebakkan Angka Dengan While", duration: "07:44" },
+                    { title: "Cara Elegan Melakukan Perulangan Pada Array For Of", duration: "05:43" },
+                    { title: "Melakukan Perulangan Pada Object Dengan Elegan For In", duration: "05:38" }
+                ]
+            },
+            {
+                topic: "Function dan Method pada JavaScript",
+                materials: [
+                    { title: "Pengenalan Function Di Javascript", duration: "06:32" },
+                    { title: "Mendefinisikan Dan Menjalankan Function", duration: "07:08" },
+                    { title: "Argument Dan Parameter Dalam Function", duration: "06:56" },
+                    { title: "Multiple Parameter Dan Argument", duration: "05:42" },
+                    { title: "Statement Return Pada Function", duration: "08:28" },
+                    { title: "Visibilitas Variabel Sesuai Scope Atau Ruang Lingkup", duration: "09:13" },
+                    { title: "Blocked Scope Variabel", duration: "09:06" },
+                    { title: "Lexical Scope", duration: "05:01" },
+                    { title: "Function Expressions", duration: "05:28" },
+                    { title: "Function Sebagai Argument Function Lain", duration: "05:09" },
+                    { title: "Function Bernilai Balik Function", duration: "05:27" },
+                    { title: "Definisi Sebuah Method", duration: "05:10" },
+                    { title: "This Adalah Keyword Sakti", duration: "04:37" },
+                    { title: "Try And Catch Adalah Penyelamat", duration: "07:31" }
+                ]
+            },
+            {
+                topic: "Callback Function dan Method-method milik Array",
+                materials: [
+                    { title: "Foreach Method", duration: "09:23" },
+                    { title: "Map Method", duration: "06:45" },
+                    { title: "Sebelum Lanjut Kenalan Dengan Arrow Function", duration: "06:26" },
+                    { title: "Return Secara Implisit Dari Arrow Function", duration: "04:23" },
+                    { title: "Memahami Settimeout Dan Setinterval", duration: "08:01" },
+                    { title: "Memilih Data Tertentu Di Dalam Array Dengan Filter Method", duration: "09:38" },
+                    { title: "Menentukan Benar Atau Salah Pada Array Dengan Every Dan Some Method", duration: "05:49" },
+                    { title: "Mendapatkan Satu Nilai Sesuai Kondisi Dari Sebuah Array Dengan Reduce", duration: "12:41" },
+                    { title: "Object This Di Dalam Arrow Function Mengarah Pada Object Global Window", duration: "04:49" }
+                ]
+            },
+            {
+                topic: "Beberapa Fitur Terbaru dari JavaScript",
+                materials: [
+                    { title: "Mengatur Default Value Pada Function", duration: "08:24" },
+                    { title: "Mengubah Array Atau Object Menjadi Deret Value Argument Function", duration: "04:20" },
+                    { title: "Menggabungkan Nilai Array Dengan Array Lagi", duration: "05:24" },
+                    { title: "Menggabungkan Property Object Dengan Object Lainnya", duration: "03:31" },
+                    { title: "Malas Bikin Parameter Banyak Bisa Pakai Rest Param", duration: "07:38" },
+                    { title: "Bongkar Element Array Ke Masing-Masing Variabel Dengan Mudah", duration: "03:26" },
+                    { title: "Bongkar Juga Properti Object Ke Masing-Masing Variabel", duration: "05:43" },
+                    { title: "Bongkar Properti Object Bisa Dilakukan Di Dalam Function", duration: "04:48" }
                 ]
             }
         ]
     },
-    'git': {
-        title: 'Professional Workflow dengan Git',
-        description: 'Kuasai cara mengelola kode dan kolaborasi tim menggunakan Git. Kamu akan belajar standar kerja yang digunakan oleh tim developer di perusahaan besar.',
+    'js-dom': {
+        title: 'JavaScript DOM Mastery',
+        description: 'Pelajari cara memanipulasi halaman web secara langsung menggunakan Document Object Model. Dari dasar hingga event handling, semua ada di sini.',
         syllabus: [
             {
-                topic: "Belajar Git Pemula",
+                topic: "Mengenal Document Object Model",
                 materials: [
-                    { title: "GIT Pendahuluan", duration: "11:40" },
-                    { title: "GIT Panduan Instalasi GIT", duration: "03:38" },
-                    { title: "GIT Macam-macam Perintah GIT Dasar", duration: "02:44" },
-                    { title: "GIT Menginisialisasi project dengan git init dan mencoba clone", duration: "06:12" },
-                    { title: "GIT Menambahkan file baru, dan melakukan git add", duration: "03:47" },
-                    { title: "GIT Reset perubahan file dengan git reset", duration: "01:54" },
-                    { title: "GIT Melakukan commit, mempraktekan diff dan log", duration: "06:51" },
-                    { title: "GIT Melakukan unggah file dengan git push", duration: "08:52" },
-                    { title: "GIT Melakukan unduh file dengan git pull", duration: "03:16" },
-                    { title: "GIT Bermain main dengan fetch dan branch", duration: "05:21" },
-                    { title: "GIT Membuat branch baru, melakukan checkout", duration: "07:31" },
-                    { title: "GIT Menyatukan branch satu dengan lainnya, git merge", duration: "03:44" },
-                    { title: "GIT Menyelesaikan Konflik pada GIT", duration: "07:23" },
-                    { title: "GIT Menandai milestone project dengan git tag", duration: "04:21" }
+                    { title: "Apa Itu Dom", duration: "04:34" },
+                    { title: "Melihat Isi Document Object Model", duration: "09:17" },
+                    { title: "Mendapatkan Element Html Berdasarkan Id", duration: "09:24" },
+                    { title: "Mendapatkan Element Html Berdasarkan Tag Dan Class", duration: "11:09" },
+                    { title: "Lebih Mudah Memilih Element Dengan Menggunakan Queryselector", duration: "07:43" },
+                    { title: "Memahami Innerthtml, Innertext Dan Textcontent", duration: "12:35" },
+                    { title: "Mendapatkan Attribute Yang Dimiliki Element Html", duration: "06:05" },
+                    { title: "Melakukan Styling Dengan Javascript Dom", duration: "08:03" },
+                    { title: "Memanfaatkan Classlist Untuk Styling Dengan Dom", duration: "08:04" },
+                    { title: "Menjelajahi Element Parent, Child Dan Sibling", duration: "10:20" },
+                    { title: "Memahami Append Dan Appendchild", duration: "11:37" },
+                    { title: "Memahami Remove Dan Removechild", duration: "04:41" },
+                    { title: "Latihan Memanggil Pokemon Dengan Dom", duration: "10:18" }
+                ]
+            },
+            {
+                topic: "Mengenal Event DOM - Membuat Web Lebih Interaktif",
+                materials: [
+                    { title: "Pengantar Event Dom", duration: "05:53" },
+                    { title: "Menjalankan Event Pada Inline Element", duration: "09:48" },
+                    { title: "Menjalankan Event Melalui Property Dom", duration: "07:15" },
+                    { title: "Mengenal Fungsi Addeventlistener", duration: "07:32" },
+                    { title: "Latihan Addeventlistener Untuk Generate Color", duration: "07:23" },
+                    { title: "Manfaatkan Keyword This Pada Event Dom", duration: "07:44" },
+                    { title: "Belajar Keyboard Event Dan Mengenal Object Dalam Event", duration: "12:14" },
+                    { title: "Mengenal Event Preventdefault", duration: "07:11" },
+                    { title: "Praktek Input Realtime Dengan Event Dan Dom", duration: "06:55" },
+                    { title: "Event Input Dan Change Pada Form", duration: "06:22" },
+                    { title: "Mengenal Event Bubbling", duration: "05:44" },
+                    { title: "Mengenal Event Delegation", duration: "07:14" }
+                ]
+            },
+            {
+                topic: "Latihan DOM Membuat Papan Skor",
+                materials: [
+                    { title: "Latihan Dom Membuat Papan Skor Bag 1", duration: "11:34" },
+                    { title: "Latihan Dom Membuat Papan Skor Bag 2", duration: "06:44" },
+                    { title: "Latihan Dom Membuat Papan Skor Bag 3", duration: "07:56" },
+                    { title: "Latihan Dom Membuat Papan Skor Bag 4", duration: "08:02" }
                 ]
             }
         ]
     },
-    'oop': {
-        title: 'Mastering OOP PHP (Object Oriented Programming)',
-        description: 'Pelajari cara menulis kode yang rapi, terstruktur, dan mudah dikembangkan. Konsep ini adalah kunci utama untuk memahami kecanggihan framework Laravel.',
+    'tailwind-dasar': {
+        title: 'Tailwind Dasar - Desain Web Kilat Jaman Sekarang',
+        description: 'Bosankah dengan CSS yang rumit dan makan waktu? Dalam waktu singkat, kamu akan menguasai framework CSS Tailwind untuk membangun antarmuka pengguna (UI) yang responsif dan indah dengan cepat.',
         syllabus: [
             {
-                topic: "Pengenalan OOP",
+                topic: "Tailwind Dasar",
                 materials: [
-                    { title: "Apa itu OOP", duration: "09:05" },
-                    { title: "Cara Mendefinisikan Class", duration: "08:06" },
-                    { title: "Memahami Instance Object", duration: "05:16" },
-                    { title: "Property pada Class OOP", duration: "10:37" },
-                    { title: "Method pada Class OOP", duration: "07:32" },
-                    { title: "Menggunakan Object", duration: "08:54" },
-                    { title: "Mengenal Inheritance", duration: "05:39" },
-                    { title: "Mendefinisikan Subclass", duration: "08:39" }
-                ]
-            },
-            {
-                topic: "MATERI LANJUTAN",
-                materials: [
-                    { title: "Extend dan Override", duration: "09:52" },
-                    { title: "Visibilitas Object – Encapsulation", duration: "14:24" },
-                    { title: "Setter dan Getter", duration: "08:59" },
-                    { title: "Static Property dan Method", duration: "10:14" },
-                    { title: "Pewarisan Static Property dan Method", duration: "08:07" },
-                    { title: "Constant Class", duration: "06:01" },
-                    { title: "Merujuk Parent Class", duration: "09:45" },
-                    { title: "Construct Method", duration: "06:57" },
-                    { title: "Construct Argument", duration: "08:05" },
-                    { title: "Destruct Method", duration: "07:30" },
-                    { title: "Clone Method", duration: "05:50" },
-                    { title: "Autoload Method", duration: "08:50" },
-                    { title: "PHP Namespace Overview", duration: "04:17" },
-                    { title: "Menggunakan Namespace", duration: "07:18" },
-                    { title: "Menggunakan Composer", duration: "08:19" },
-                    { title: "Penjelasan Interface", duration: "04:50" },
-                    { title: "Membuat Interface", duration: "06:35" },
-                    { title: "Penjelasan Trait", duration: "03:11" },
-                    { title: "Membuat Trait", duration: "03:55" },
-                    { title: "Penjelasan Abstract Class", duration: "02:48" },
-                    { title: "Membuat Abstract Class", duration: "04:11" },
-                    { title: "Penjelasan Type Hint", duration: "06:04" },
-                    { title: "Penjelasan Strict Declaration", duration: "04:49" },
-                    { title: "Penjelasan Return Type", duration: "07:15" },
-                    { title: "Penjelasan Closure", duration: "07:41" },
-                    { title: "Membuat Closure", duration: "08:48" }
+                    { title: "Styling Website dengan Tailwind CSS", duration: "120:00" }
                 ]
             }
         ]
     },
-    'olx': {
-        title: 'Membangun Marketplace dengan AI Assist',
-        description: 'Praktek langsung membuat website marketplace (OLX Clone) menggunakan PHP yang dipercepat dengan bantuan AI. Belajar cara kerja cerdas sejak awal.',
+    'react-fundamental': {
+        title: 'React Fundamental',
+        description: 'Pelajari fondasi React dari awal hingga mahir. Dari instalasi hingga routing, kuasai semua konsep dasar yang dibutuhkan untuk membangun aplikasi web modern.',
         syllabus: [
             {
-                topic: "PHP Native & MySQL: Membangun Website OLX Clone dengan AI Assist Windsurf",
+                topic: "Belajar ReactJS",
                 materials: [
-                    { title: "Introduction", duration: "02:07" },
-                    { title: "Mengapa AI", duration: "04:07" },
-                    { title: "Apakah AI Akan Menggantikan Programmer", duration: "05:14" },
-                    { title: "Skenario Yang Akan Dibuat", duration: "02:54" },
-                    { title: "Tools yang dibutuhkan apa saja", duration: "03:21" },
-                    { title: "Sekilas Tentang Agentic IDE", duration: "03:46" },
-                    { title: "Apa Itu Database", duration: "03:38" },
-                    { title: "Instalasi Windsurf Editor", duration: "04:12" },
-                    { title: "Instalasi XAMPP", duration: "05:46" },
-                    { title: "User Persona", duration: "06:23" },
-                    { title: "Merancang Database", duration: "04:52" },
-                    { title: "Konfigurasi Dulu", duration: "07:05" },
-                    { title: "Relasi dan Table", duration: "15:05" },
-                    { title: "Halaman Utama", duration: "11:51" },
-                    { title: "Halaman Detail", duration: "06:11" },
-                    { title: "Halaman Login dan Register", duration: "04:37" },
-                    { title: "Halaman Pasang Iklan", duration: "08:36" },
-                    { title: "Konfigurasi Awal", duration: "06:06" },
-                    { title: "Skema Register", duration: "11:44" },
-                    { title: "Skema Login", duration: "08:19" },
-                    { title: "Kategori dinamis pada post ad", duration: "09:22" },
-                    { title: "Location dinamis pada post ad", duration: "11:03" },
-                    { title: "Post ad bagian 1", duration: "13:31" },
-                    { title: "Post ad bagian 2", duration: "06:05" },
-                    { title: "Testing pasang iklan", duration: "06:03" },
-                    { title: "Skenario Halaman Beranda", duration: "08:42" },
-                    { title: "Skenario Halaman Detail", duration: "09:26" },
-                    { title: "Percantik Halaman Detail", duration: "05:51" },
-                    { title: "Halaman Iklan Saya", duration: "07:36" },
-                    { title: "Fitur Edit dan Hapus Iklan Saya", duration: "12:27" },
-                    { title: "Session Notice dan Logout", duration: "04:12" },
-                    { title: "Halaman Edit Profile", duration: "09:09" },
-                    { title: "Testing Semua Fitur", duration: "08:54" },
-                    { title: "Persiapan Launch Market", duration: "04:10" },
-                    { title: "Hosting Bagian 1", duration: "16:36" },
-                    { title: "Hosting Lanjutan dan Final Testing", duration: "08:01" }
+                    { title: "Introduction - Instalasi", duration: "09:54" },
+                    { title: "Pengenalan Project React", duration: "12:26" },
+                    { title: "Pengenalan Component Dasar", duration: "05:14" },
+                    { title: "JSX", duration: "08:04" },
+                    { title: "Props pada Child Component", duration: "06:43" },
+                    { title: "Blog sederhana menggunakan JSON", duration: "09:20" },
+                    { title: "Fitur Filter Data dan Pengenalan useState", duration: "11:34" },
+                    { title: "Mengembalikan Value ke Parent melalui Props", duration: "11:10" },
+                    { title: "Conditional Rendering", duration: "05:14" },
+                    { title: "Conditional Rendering 2", duration: "08:02" },
+                    { title: "onClick Methods", duration: "08:52" },
+                    { title: "Lifecycle dan useEffect", duration: "11:25" },
+                    { title: "Fetch API dengan useEffect", duration: "06:29" },
+                    { title: "Multiple useEffect", duration: "03:40" },
+                    { title: "Dasar State Management dengan useContext", duration: "12:17" },
+                    { title: "Menginstall React Router", duration: "09:35" },
+                    { title: "Halaman About", duration: "03:12" },
+                    { title: "Layouting dan Children Routes", duration: "10:26" },
+                    { title: "Halaman Blog", duration: "07:48" },
+                    { title: "Dynamic Parameter Route dan Menampilkan Artikel", duration: "12:56" },
+                    { title: "React Router Data Loader", duration: "09:37" },
+                    { title: "Error Page", duration: "03:47" },
+                    { title: "Dynamic Style untuk NavLink", duration: "09:22" }
                 ]
             }
         ]
     },
-    'laravel11': {
-        title: 'Laravel: The Ultimate Fullstack Framework',
-        description: 'Kuasai framework PHP paling populer saat ini. Kamu akan belajar membangun aplikasi web yang utuh, aman, dan berperforma tinggi dari nol.',
+    'react-hook': {
+        title: 'React Hook - Effect dan Data Fetching',
+        description: 'Kuasai konsep useEffect dan data fetching di React. Pelajari cara mengelola lifecycle component, menghindari infinite loop, dan membangun aplikasi dengan fetch data yang efisien.',
         syllabus: [
             {
-                topic: "Router",
+                topic: "React.js - Belajar Hook Effect dan Data Fetching",
                 materials: [
-                    { title: "router - mengenal cara kerja router", duration: "05:05" },
-                    { title: "router - kenali http method sebelum praktek", duration: "04:30" },
-                    { title: "router - contoh penggunaan method get", duration: "07:36" },
-                    { title: "router - cara kerja method post di laravel", duration: "08:55" },
-                    { title: "router - mendapatkan data dari user menggunakan method post", duration: "06:27" },
-                    { title: "router - mengubah data dengan method put dan cara kirim melalui form", duration: "06:00" },
-                    { title: "router - menggunakan route parameter untuk menentukan data", duration: "04:12" },
-                    { title: "router - menggunakan method patch untuk ubah data", duration: "04:02" },
-                    { title: "router - menggunakan method delete dan kesimpulan", duration: "04:31" }
-                ]
-            },
-            {
-                topic: "Middleware",
-                materials: [
-                    { title: "middleware - pengenalan middleware", duration: "07:16" },
-                    { title: "middleware - cek membership dengan middleware", duration: "08:55" },
-                    { title: "middleware - melakukan aksi sebelum atau sesudah request dilanjutkan", duration: "05:43" },
-                    { title: "middleware - mendefinisikan middleware pada tempatnya", duration: "03:32" },
-                    { title: "middleware - satu route bisa banyak middleware", duration: "04:38" },
-                    { title: "middleware - cara menerapkan middleware di banyak route", duration: "04:49" }
-                ]
-            },
-            {
-                topic: "Controller",
-                materials: [
-                    { title: "controller - cara membuat controller", duration: "07:02" },
-                    { title: "controller - cara mendefinsikan data di controller", duration: "04:28" },
-                    { title: "controller - cara menghubungkan router dengan controller", duration: "05:27" },
-                    { title: "controller - mendapatkan data berdasarkan parameter di controller", duration: "05:34" },
-                    { title: "controller - mengirimkan data dari user ke controller", duration: "05:39" },
-                    { title: "controller - mengubah data properti dari class controller", duration: "07:22" },
-                    { title: "controller - menghapus nilai property dari class controller", duration: "05:40" },
-                    { title: "Controller - Menerapkan Middleware Controller Lebih Spesifik", duration: "04:35" }
-                ]
-            },
-            {
-                topic: "Request",
-                materials: [
-                    { title: "Request - Apa Saja Data Di Dalam Request", duration: "03:45" },
-                    { title: "Request - Menggunakan Object Request Sebagai Dependency Injection", duration: "05:58" },
-                    { title: "Request - Contoh Method Request Yg Bermanfaat", duration: "05:20" },
-                    { title: "Request - Cara Mendapatkan Data", duration: "05:30" },
-                    { title: "Request - Cara Mengolah Data Dari Request", duration: "07:33" },
-                    { title: "Request - Method Khusus Untuk Data Input Dan Query Params", duration: "04:58" },
-                    { title: "Request - Method Khusus Untuk Data Tanggal", duration: "05:31" },
-                    { title: "Request - Cek Data Dari Request", duration: "04:04" },
-                    { title: "Request - Mencari Request Yg Hilang Dan Menambahkannya", duration: "03:47" }
-                ]
-            },
-            {
-                topic: "Response",
-                materials: [
-                    { title: "Response - Mengenal Response Dan Response Pada Header", duration: "05:16" },
-                    { title: "Response - Menambahkan Data Headers Untuk Cache", duration: "06:06" },
-                    { title: "Response - Menambahkan Data Cookie Melalui Response", duration: "05:00" },
-                    { title: "Response - Menghapus Data Cookie Dari Response", duration: "04:13" },
-                    { title: "Redirect - Response Beralih Ke Halaman Lain", duration: "03:58" },
-                    { title: "Redirect - Redirect Menggunakan Controller", duration: "04:00" },
-                    { title: "Redirect - Redirect Ke Halaman External Atau Menggunakan Url", duration: "02:58" },
-                    { title: "Response - Membuat Nilai Balik Dalam Bentuk Json", duration: "03:45" }
-                ]
-            },
-            {
-                topic: "View",
-                materials: [
-                    { title: "View - Cara Menampilkan Halaman", duration: "05:48" },
-                    { title: "View - Membuat File View Lebih Terstruktur", duration: "05:17" },
-                    { title: "View - Melempar Data Dari Controller Ke View", duration: "04:24" },
-                    { title: "View - Cara Lain Mengirimkan Data Ke View", duration: "03:48" },
-                    { title: "View - Berbagi Data Di Manapun View Berada", duration: "05:48" },
-                    { title: "View - Membuat Service Provider Untuk Sharing Data", duration: "05:32" },
-                    { title: "View - Membagikan Data Menggunakan View Composer", duration: "03:43" },
-                    { title: "View - Memisahkan Logic Data Untuk View Composer", duration: "05:41" }
-                ]
-            },
-            {
-                topic: "Blade",
-                materials: [
-                    { title: "Blade - Cara Blade Menampilkan Data", duration: "06:36" },
-                    { title: "Blade - Kondisi If", duration: "04:46" },
-                    { title: "Blade - Cara Ternary If Di Blade", duration: "04:22" },
-                    { title: "Blade - Switch Statement", duration: "04:39" },
-                    { title: "Blade - Perulangan Di Dalam Blade", duration: "08:42" },
-                    { title: "Blade - Penerapan Continue Dan Break Di Perulangan Blade", duration: "05:36" },
-                    { title: "Blade - Ada Variabel Tersembunyi Dari Perulangan", duration: "06:16" },
-                    { title: "Blade - Menggunakan Kondisi Di Dalam Attribute Class", duration: "04:06" },
-                    { title: "Blade - Memecah Tampilan Blade Dengan Fungsi Include", duration: "05:19" }
-                ]
-            },
-            {
-                topic: "Layouting",
-                materials: [
-                    { title: "Layouting - Membuat Master Layout", duration: "05:01" },
-                    { title: "Layouting - Membuat Content Dan Component Blade Dinamis", duration: "08:14" },
-                    { title: "Layouting - Menampilkan Daftar Movie Dari Array", duration: "07:47" },
-                    { title: "Layouting - Menampilkan Detail Movie", duration: "10:20" },
-                    { title: "Layouting - Membuat Form Tambah Movie", duration: "08:48" },
-                    { title: "Layouting - Menyimpan Data Movie Baru", duration: "09:54" },
-                    { title: "Layouting - Menampilkan Halaman Edit Beserta Datanya", duration: "09:13" },
-                    { title: "Layouting - Memperbarui Data Movie", duration: "06:00" },
-                    { title: "Layouting - Memperbaiki Link Pada Icon Edit Movie", duration: "04:35" },
-                    { title: "Layouting - Membuat Action Button Delete Movie Dan Menghapusnya", duration: "06:30" },
-                    { title: "Layouting - Mengenal Layouting Dengan Component Anonymous", duration: "07:50" },
-                    { title: "Layouting - Membuat Banyak Section Di Satu Component", duration: "05:14" },
-                    { title: "Layouting - Mengirimkan Data Ke Child Component Anonymous", duration: "04:54" },
-                    { title: "Layouting - Membuat Card Movie Dengan Class Component", duration: "06:39" },
-                    { title: "Layouting - Mengirimkan Data Ke Class Component", duration: "04:30" },
-                    { title: "Layouting - Memodifikasi Data Di Class Component", duration: "04:48" },
-                    { title: "Layouting - Membuat Logic Validasi Di Class Component", duration: "04:09" },
-                    { title: "Layouting - Membuat Method Bisa Diakses Di Component View", duration: "04:34" }
-                ]
-            },
-            {
-                topic: "Validation",
-                materials: [
-                    { title: "Validation - Cara Membuat Validasi Requets Input", duration: "06:19" },
-                    { title: "Validation - Menampilkan Error Message Berdasarkan Field", duration: "06:44" },
-                    { title: "Validation - Menambahkan Rules Validation Lebih Dari Satu", duration: "05:15" },
-                    { title: "Validation - Mengembalikan Nilai Inputan Sebelumnya", duration: "04:42" },
-                    { title: "Validation - Menulis Rules Validation Pada Tempatnya", duration: "06:09" },
-                    { title: "Validation - Membuat Error Message Validasi Sendiri", duration: "04:50" }
-                ]
-            },
-            {
-                topic: "Session",
-                materials: [
-                    { title: "Session - Mengenal Session Dan Konfigurasinya", duration: "07:58" },
-                    { title: "Session - Menyimpan Dan Menampilkan Data Session", duration: "04:50" },
-                    { title: "Session - Menyimpan Data Array Dan Menampilkan Seluruh Isi Session", duration: "03:31" },
-                    { title: "Session - Cara Menghapus Data Session", duration: "04:47" }
-                ]
-            },
-            {
-                topic: "Migration",
-                materials: [
-                    { title: "Configurasi Database di Laravel", duration: "06:17" },
-                    { title: "Membuat Desain Tabel dengan Migration", duration: "08:14" },
-                    { title: "Menambahkan Kolom Baru Pada Tabel", duration: "07:15" },
-                    { title: "Memodifikasi Tabel yang Sudah Ada", duration: "06:12" },
-                    { title: "Menghapus Kolom Menggunakan Migration", duration: "03:25" },
-                    { title: "Menambahkan Index Kolom pada Tabel", duration: "04:34" }
-                ]
-            },
-            {
-                topic: "Seeder",
-                materials: [
-                    { title: "Membuat Contoh Data dengan Seeder", duration: "09:23" }
-                ]
-            },
-            {
-                topic: "Query",
-                materials: [
-                    { title: "Mendapatkan Data dengan Query Builder", duration: "07:56" }
-                ]
-            },
-            {
-                topic: "Query dan ORM",
-                materials: [
-                    { title: "Mendapatkan Data dengan Eloquent", duration: "06:34" },
-                    { title: "Menambahkan Data ke DB dengan Query Builder", duration: "06:58" },
-                    { title: "Menambahkan Data ke DB dengan Eloquent", duration: "05:46" },
-                    { title: "Mengubah Data ke DB dengan Query Builder", duration: "04:10" },
-                    { title: "Mengubah Data ke DB dengan Eloquent", duration: "04:34" },
-                    { title: "Menghapus Data di DB with Query Builder and Eloquent", duration: "04:09" }
-                ]
-            },
-            {
-                topic: "Database Relationship",
-                materials: [
-                    { title: "persiapan desain tabel yang berelasi", duration: "05:59" },
-                    { title: "one to one - menambahkan data yg berelasi", duration: "08:28" },
-                    { title: "one to one - menampilkan data relasi", duration: "05:15" },
-                    { title: "one to one - mengubah dan menghapus data", duration: "05:33" },
-                    { title: "one to many - persiapan model dan migration", duration: "06:39" },
-                    { title: "one to many - mendapatkan parent beserta child", duration: "07:35" },
-                    { title: "one to many - Mendapatkan data dari relasi dengan filtering", duration: "09:19" },
-                    { title: "many to many - persiapan tabel dan model", duration: "06:41" },
-                    { title: "many to many - menambahkan data antar model", duration: "05:47" },
-                    { title: "many to many - menghapus data antar model", duration: "03:35" },
-                    { title: "many to many - menambahkan dan menghapus data antar model sekaligus", duration: "04:36" }
-                ]
-            },
-            {
-                topic: "Auth",
-                materials: [
-                    { title: "Register", duration: "06:28" },
-                    { title: "Register Part 2", duration: "07:47" },
-                    { title: "Login", duration: "06:32" },
-                    { title: "Penerapan Middleware Auth Pada Halaman dan Logout", duration: "05:44" }
+                    { title: "Memahami Component Lifecycle Sebelum Belajar Effect", duration: "03:44" },
+                    { title: "Cara Yang Harus Dihindari Saat Melakukan Fetch Dan Update State", duration: "08:24" },
+                    { title: "Gunakan Useeffect Untuk Mencegah Infinite loop", duration: "03:34" },
+                    { title: "Mengenal Effect Lebih Lanjut", duration: "04:10" },
+                    { title: "Menggunakan Async Function Di React", duration: "05:03" },
+                    { title: "Memanfaatkan State Untuk Loading Progress", duration: "03:21" },
+                    { title: "Cara Handle Error Dengan Baik", duration: "08:15" },
+                    { title: "Mengenal Dependency Array Pada Effect", duration: "04:57" },
+                    { title: "Contoh Proses Sinkronisasi Useeffect Di React", duration: "04:13" },
+                    { title: "Memanfaatkan Dependency Array Untuk Fetch Data", duration: "04:03" },
+                    { title: "Mendapatkan Id Movie Yang Dipilih", duration: "05:05" },
+                    { title: "Membuat Component Untuk Melihat Id Movie", duration: "05:29" },
+                    { title: "Cara Mendapatkan Detail Movie Melalui Fetch Menggunakan Effect", duration: "06:02" },
+                    { title: "Menampilkan Detail Movie Di Component Movie Detail", duration: "07:48" },
+                    { title: "Menambahkan Daftar Tonton Ke Watched List", duration: "07:47" },
+                    { title: "Menyimpan Nilai Rating Saat Tambah Data Movie", duration: "05:47" },
+                    { title: "Mendapatkan Kumpulan Nilai User Rating Dan Hapus Daftar Tonton", duration: "06:02" },
+                    { title: "Membuat Effect Untuk Membuat Judul Page Dinamis", duration: "04:08" },
+                    { title: "Memahami Lifecycle Unmount Pada Effect", duration: "04:16" },
+                    { title: "Menghindari Fetch Setiap Update State Query", duration: "06:01" }
                 ]
             }
         ]
     },
-    'filament': {
-        title: 'Filament Mastery: Membuat Admin Panel Kilat',
-        description: 'Pelajari cara membangun dashboard admin yang canggih dan terlihat sangat profesional hanya dalam hitungan menit. Teknik ini akan sangat menghemat waktu kerjamu.',
+    'next-js': {
+        title: 'Next.js dengan Headless CMS',
+        description: 'Kuasai Next.js dari dasar hingga integrasi dengan Headless CMS. Pelajari routing, server rendering, styling dengan Tailwind, deployment, dan cara mengelola konten dengan Strapi.',
         syllabus: [
             {
-                topic: "Filament untuk Pemula: Laravel Admin Tanpa Pusing ",
-                materials: [{ title: "Filament Laravel Admin", duration: "60:01" }]
-            }
-        ]
-    },
-    'laravel12': {
-        title: 'Proyek Enterprise: Sistem HRIS Laravel 12',
-        description: 'Tantang dirimu membangun sistem manajemen karyawan (HRIS) yang kompleks. Gunakan fitur-fitur terbaru Laravel 12 untuk menangani logika bisnis skala besar.',
-        syllabus: [
-            {
-                topic: "Mengembangkan Sistem HRIS Seperti Talenta Menggunakan Laravel 12",
+                topic: "Pengenalan dan Setup Next.js",
                 materials: [
-                    { title: "Pembukaan", duration: "01:07" },
-                    { title: "Pengenalan Tools", duration: "03:37" },
-                    { title: "Konteks & Demo Sisi Admin", duration: "05:31" },
-                    { title: "Konteks & Demo Sisi Karyawan", duration: "05:16" },
-                    { title: "Database Design (ERD)", duration: "04:48" },
-                    { title: "Install Laravel", duration: "02:24" },
-                    { title: "Setup ENV dan DB", duration: "05:09" },
-                    { title: "Setup Migration", duration: "21:05" },
-                    { title: "Run Migration & Bug Fixing", duration: "08:45" },
-                    { title: "Seeding", duration: "32:19" },
-                    { title: "Install Laravel Breeze", duration: "08:34" },
-                    { title: "Install Dashboard Template", duration: "27:14" },
-                    { title: "Mengatur Layouts", duration: "14:58" },
-                    { title: "Fitur Tasks - Index", duration: "34:12" },
-                    { title: "Fitur Tasks - Handle Create", duration: "15:12" },
-                    { title: "Fitur Tasks - Install Flatpickr", duration: "07:09" },
-                    { title: "Fitur Tasks - Handle Form Edit", duration: "17:19" },
-                    { title: "Fitur Tasks - Handle Delete", duration: "06:07" },
-                    { title: "Fitur Tasks - Marking Status", duration: "05:59" },
-                    { title: "Fitur Tasks - Handle show", duration: "06:51" },
-                    { title: "Fitur Employees - Index", duration: "21:21" },
-                    { title: "Fitur Employees - Handle Create", duration: "24:04" },
-                    { title: "Fitur Employees - Handle show", duration: "05:14" },
-                    { title: "Fitur Employees - Update Data", duration: "25:34" },
-                    { title: "Fitur Employees - Delete Data", duration: "04:37" },
-                    { title: "Fitur Departments - Index", duration: "08:27" },
-                    { title: "Fitur Departments - Create", duration: "09:44" },
-                    { title: "FItur Departments - Edit", duration: "10:15" },
-                    { title: "Fitur Departments - Delete", duration: "02:37" },
-                    { title: "Fitur Roles - Index", duration: "04:33" },
-                    { title: "Fitur Roles - Create", duration: "01:16" },
-                    { title: "Fitur Roles - Update", duration: "06:51" },
-                    { title: "Fitur Roles - Delete", duration: "01:36" },
-                    { title: "Fitur Presences - Index", duration: "11:36" },
-                    { title: "Fitur Presences - Create", duration: "00:10" },
-                    { title: "Fitur Presences - Update", duration: "09:04" },
-                    { title: "Fitur Presence - Delete", duration: "02:10" },
-                    { title: "Fitur Payrolls - Index", duration: "15:12" },
-                    { title: "Fitur Payrolls - Create", duration: "14:32" },
-                    { title: "Fitur Payrolls - Update", duration: "11:41" },
-                    { title: "Fitur Payrolls - Delete", duration: "03:31" },
-                    { title: "Fitur Payrolls - Salary Slip", duration: "14:38" },
-                    { title: "Fitur Leave Requests - Index", duration: "12:38" },
-                    { title: "Fitur Leave Requests - Create", duration: "08:58" },
-                    { title: "Fitur Leave Requests - Update", duration: "07:33" },
-                    { title: "Fitur Leave Requests - Confirm Reject", duration: "07:08" },
-                    { title: "Fitur Leave Requests - Delete", duration: "01:45" },
-                    { title: "Konsep Auth & Authorization", duration: "02:52" },
-                    { title: "Implementasi Middleware CheckRole", duration: "19:55" },
-                    { title: "Memperbaiki Link Sidebar", duration: "03:22" },
-                    { title: "Memperbaiki Link Sidebar - Minor Patch", duration: "01:08" },
-                    { title: "Fitur Tasks Karyawan", duration: "03:24" },
-                    { title: "Fitur Presence Karyawan", duration: "32:58" },
-                    { title: "Fitur Payroll Karyawan", duration: "03:49" },
-                    { title: "Fitur Leave Request Karyawan", duration: "08:10" },
-                    { title: "Handle menu active", duration: "04:05" },
-                    { title: "Mempercantik Insight - Total Data", duration: "14:41" },
-                    { title: "Mempercantik Insight - Latest Task", duration: "04:57" },
-                    { title: "Mempercantik Insight - Presence Chart", duration: "16:56" },
-                    { title: "Finishing", duration: "02:13" }
+                    { title: "Pengenalan Next.Js Beserta Jenisnya", duration: "06:14" },
+                    { title: "Apa Saja Yang Akan Dipelajari Dan Pengenalan Project", duration: "06:30" },
+                    { title: "Cara Setup Project Next.Js Dari Awal", duration: "09:05" },
+                    { title: "Cara Membuat Halaman Web", duration: "05:40" },
+                    { title: "Cara Menggunakan Typescript Di Project Next.Js", duration: "05:21" }
                 ]
-            }
-        ]
-    },
-    'restoran': {
-        title: 'AI-Driven SaaS: Aplikasi Restoran & QR Order',
-        description: 'Gunakan bantuan AI tingkat lanjut untuk membangun aplikasi sistem pesanan restoran berbasis QR. Proyek ini sangat berkelas untuk dijadikan portofolio unggulan.',
-        syllabus: [
+            },
             {
-                topic: "Mengembangkan Aplikasi Restoran Berbasis QR dengan Laravel 12 + Copilot AI",
+                topic: "Routing Dan Layout",
                 materials: [
-                    { title: "Pendahuluan Gambaran Aplikasi", duration: "02:24" },
-                    { title: "Demo Aplikasi - Pembayaran Tunai", duration: "07:19" },
-                    { title: "Demo Aplikasi - Pembayaran QRIS", duration: "04:43" },
-                    { title: "ER Diagram", duration: "05:22" },
-                    { title: "Use Case Diagram", duration: "02:46" },
-                    { title: "Instalasi", duration: "03:14" },
-                    { title: "Setup ENV", duration: "02:40" },
-                    { title: "Setup Repository Git", duration: "02:48" },
-                    { title: "Struktur Folder", duration: "02:34" },
-                    { title: "Migrations Table Users", duration: "04:53" },
-                    { title: "Migrations & Seeder Table Roles", duration: "03:25" },
-                    { title: "Migration Table Categories dan Items", duration: "02:58" },
-                    { title: "Factory Seeder Categories dan Items", duration: "03:16" },
-                    { title: "Factory Seeder Users", duration: "03:10" },
-                    { title: "Migrations Table Orders and Order", duration: "03:29" },
-                    { title: "Migrate", duration: "01:53" },
-                    { title: "Models", duration: "08:48" },
-                    { title: "Integrasi Template Menu", duration: "09:50" },
-                    { title: "Integrasi Template Cart dan Checkout", duration: "03:18" },
-                    { title: "Database Seeder", duration: "04:03" },
-                    { title: "MenuController Index", duration: "18:38" },
-                    { title: "MenuController AddToCart", duration: "11:23" },
-                    { title: "MenuController Empty Cart", duration: "04:26" },
-                    { title: "MenuController Update Quantity Cart", duration: "21:36" },
-                    { title: "MenuController Remove Cart", duration: "11:33" },
-                    { title: "MenuController Checkout Page", duration: "10:50" },
-                    { title: "MenuController Checkout Payment Cash", duration: "22:40" },
-                    { title: "MenuController Order Success", duration: "24:15" },
-                    { title: "Konfigurasi Midtrans Payment Gateway", duration: "05:50" },
-                    { title: "Implementasi Midtrans Payment Gateway", duration: "21:49" },
-                    { title: "Integrasi Template Admin", duration: "12:07" },
-                    { title: "Sidebar & Routes Admin", duration: "08:53" },
-                    { title: "Menampilkan Item dengan DataTable", duration: "29:26" },
-                    { title: "Store dan Update Data Item", duration: "24:48" },
-                    { title: "Delete Data Item dan Alert", duration: "10:47" },
-                    { title: "CRUD Role", duration: "07:35" },
-                    { title: "CRUD Karyawan", duration: "22:40" },
-                    { title: "CRUD Kategori", duration: "12:19" },
-                    { title: "Daftar Pesanan", duration: "09:52" },
-                    { title: "Melihat Detail Pesanan", duration: "22:54" },
-                    { title: "Update Status Menu", duration: "07:56" },
-                    { title: "Setup Autentikasi dengan Breeze", duration: "23:50" },
-                    { title: "Role Cashier & Konfirmasi Pesanan T", duration: "07:12" },
-                    { title: "Role Chef & Update Pesanan Menjadi", duration: "06:30" },
-                    { title: "Memperbaiki UI dan Halaman Login", duration: "20:49" },
-                    { title: "Recap Project & Pengembangan Selanjutnya", duration: "13:00" }
+                    { title: "Cara Membuat Url Atau Memetakan Route Halaman", duration: "05:12" },
+                    { title: "Latihan Menambahkan Route Halaman", duration: "04:16" },
+                    { title: "Fitur Nested Layout Pada App Router", duration: "04:36" },
+                    { title: "Mengenal Server Rendering Di Next.Js", duration: "06:06" },
+                    { title: "Perbedaan Server Component Dan Client Component", duration: "05:24" },
+                    { title: "Menjalankan Project Next.Js Mode Production", duration: "06:16" },
+                    { title: "Menggunakan Component Link Untuk Tautan", duration: "05:11" },
+                    { title: "Mengenal Prefetch Di Next.Js", duration: "04:59" },
+                    { title: "Latihan Navigasi Dan Fungsi Layout", duration: "04:15" }
                 ]
-            }
-        ]
-    },
-    'deploy': {
-        title: 'Deployment Expert: Meng-online-kan Aplikasi',
-        description: 'Tahap akhir yang sangat krusial. Pelajari cara menyewa server (VPS), setting keamanan SSL, hingga aplikasi buatanmu resmi online dan bisa diakses seluruh dunia.',
-        syllabus: [
+            },
             {
-                topic: "Introduction",
+                topic: "Styling Dan Component",
                 materials: [
-                    { title: "VPS, Domain Setting dan DNS", duration: "60:00" }
+                    { title: "Teknik Styling Di Next.Js", duration: "07:01" },
+                    { title: "Install Tailwindcss Dan Konfigurasinya", duration: "05:36" },
+                    { title: "Latihan Styling Layout", duration: "07:36" },
+                    { title: "Memanfaatkan Color Pallete Tailwindcss", duration: "05:01" },
+                    { title: "Membuat Component Reusable Di Next.Js", duration: "04:40" },
+                    { title: "Memanfaatkan Import Alias Untuk Perpendek Path", duration: "04:06" },
+                    { title: "Menggunakan Static Assets", duration: "04:32" },
+                    { title: "Membuat Card Post List", duration: "05:46" },
+                    { title: "Mengubah Post Card List Menjadi Component", duration: "04:09" },
+                    { title: "Cara Terbaik Menggunakan Font Di Next.Js", duration: "05:30" },
+                    { title: "Menggunakan Font Variable Dengan Tailwindcss", duration: "04:50" }
+                ]
+            },
+            {
+                topic: "Mengelola Konten Markdown",
+                materials: [
+                    { title: "Cara Membaca File Markdown Di Next.Js", duration: "04:52" },
+                    { title: "Menampilkan Data Markdown Pada Component", duration: "04:10" },
+                    { title: "Menampilkan Style Markdown Yang Sesuai Dengan Tailwindcss", duration: "03:50" },
+                    { title: "Mengenal Data Meta Dari Markdown - Front-Matter", duration: "04:55" },
+                    { title: "Memisahkan Layer Data Dengan Layer Ui", duration: "04:58" },
+                    { title: "Membuat Route Dinamis Untuk Post", duration: "04:06" },
+                    { title: "Membuat Fungsi Untuk Mendapatkan List Content Post", duration: "06:02" },
+                    { title: "Menampilkan Data Post Pada Halaman Blog", duration: "03:40" },
+                    { title: "Menambahkan Data Deskripsi Dan Cara Mendapatkan Link Sebuah Post", duration: "02:54" }
+                ]
+            },
+            {
+                topic: "SEO, Metadata, Dan Fitur Tambahan",
+                materials: [
+                    { title: "Cara Menggunakan Meta Data Untuk Seo Di Next.Js", duration: "05:51" },
+                    { title: "Template Meta Data Agar Title Menjadi Dinamis Setiap Halaman", duration: "03:57" },
+                    { title: "Membuat Metadata Lebih Dinamis Untuk Seo Friendly", duration: "03:18" },
+                    { title: "Menambahkan Favicon Dan Metadata Lainnya", duration: "04:19" },
+                    { title: "Membuat Component Client Untuk Share Link", duration: "06:16" },
+                    { title: "Membuat Fungsi Copy Link Dengan Client Component", duration: "05:59" },
+                    { title: "Percantik Halaman Web Dengan Icon Berbasis Tailwindcss", duration: "03:35" }
+                ]
+            },
+            {
+                topic: "Deploy Project Next.Js",
+                materials: [
+                    { title: "Persiapan Deploy Project Next.Js", duration: "04:23" },
+                    { title: "Deploy Project Next.Js Di Vercel", duration: "04:25" },
+                    { title: "Persiapan Deploy Static Page Next.Js", duration: "04:10" },
+                    { title: "Deploy Project Static Page Next.Js Di Self Hosting", duration: "04:33" }
+                ]
+            },
+            {
+                topic: "Integrasi Headless CMS Dengan Strapi",
+                materials: [
+                    { title: "Mengenal Teknologi Headless Cms", duration: "04:15" },
+                    { title: "Persiapan Headless Cms Untuk Membuat Konten", duration: "08:19" },
+                    { title: "Cara Mendapatkan Data Dari Strapi Di Next.Js", duration: "07:02" },
+                    { title: "Menentukan Data Response Dari Strapi Dengan Parameter", duration: "06:02" },
+                    { title: "Persiapan Menampilkan Data List Post Dari Strapi", duration: "04:22" },
+                    { title: "Mendapatkan Gambar Dan Data Lainnya Dari Strapi", duration: "04:21" },
+                    { title: "Cara Mendapatkan Satu Data Dari Strapi Berdasarkan Slug", duration: "04:07" },
+                    { title: "Menampilkan Single Post Dari Strapi", duration: "04:25" },
+                    { title: "Refactor Kode Fetch Data Post Dari Strapi", duration: "06:19" },
+                    { title: "Mendapatkand Data Slug Untuk Digenerate Static Page", duration: "05:23" }
+                ]
+            },
+            {
+                topic: "Optimasi, Revalidasi, Dan Pagination",
+                materials: [
+                    { title: "Setup Eslint Untuk Menjaga Kualitas Kode Program", duration: "05:37" },
+                    { title: "Menggunakan Image Component Dari Next", duration: "05:00" },
+                    { title: "Proses Konversi File Gambar Dengan Component Image", duration: "04:29" },
+                    { title: "Mengenal Fungsi Dynamic Parameter", duration: "05:26" },
+                    { title: "Mengenal Fungsi Force Dynamic Pada Component", duration: "04:34" },
+                    { title: "Menampilkan Halaman Not Found", duration: "03:49" },
+                    { title: "Mengenal Fungsi Revalidate Untuk Fetch Data", duration: "04:16" },
+                    { title: "Menggunakan Force Update Dan Revalidate Di Fetch", duration: "04:36" },
+                    { title: "Menyiapkan Jalan Untuk Webhook Konten Dari Cms", duration: "07:16" },
+                    { title: "Menggunakan On Demand Revalidation", duration: "05:33" },
+                    { title: "Mendapatkan Data Dari Query Parameter Untuk Pagination", duration: "07:29" },
+                    { title: "Menggunakan Parameter Pagination Strapi", duration: "04:24" },
+                    { title: "Mendapatkan Nilai Total Halaman Dari Pagination", duration: "03:54" },
+                    { title: "Memisahkan Component Pagination Dan Logic Batas Page", duration: "06:21" }
                 ]
             }
         ]
