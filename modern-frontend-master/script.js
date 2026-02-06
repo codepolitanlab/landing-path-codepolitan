@@ -754,6 +754,41 @@ const courseData = {
                 materials: [{ title: "English For Developer!", duration: "120:00" }]
             }
         ]
+    },
+    'astro-js': {
+        title: 'Membangun Situs Statis Super Cepat dengan Astro.js',
+        description: 'Kelas ini dirancang untuk pengembang web yang ingin mempelajari cara membangun situs statis yang modern dan sangat cepat menggunakan Astro.js. Peserta akan belajar dasar-dasar Astro.js, mengintegrasikan komponen dari berbagai framework, serta mengoptimalkan situs untuk performa terbaik.',
+        syllabus: [
+            {
+                topic: "Membangun Situs Statis Super Cepat dengan Astro.js",
+                materials: [
+                    { title: "Simple Preview", duration: "20:47" },
+                    { title: "Cara Install", duration: "07:38" },
+                    { title: "Persiapan Tools", duration: "04:42" },
+                    { title: "Konsep Dasar", duration: "10:19" },
+                    { title: "Routing", duration: "06:23" },
+                    { title: "Dynamic Routing", duration: "06:20" },
+                    { title: "Components", duration: "06:07" },
+                    { title: "Pages", duration: "13:17" },
+                    { title: "Layouts", duration: "13:48" },
+                    { title: "CSS Styles", duration: "17:23" },
+                    { title: "Scripts & Event Handling", duration: "21:00" },
+                    { title: "Studi Kasus News Portal", duration: "03:27" },
+                    { title: "Membuat Data Sample", duration: "04:25" },
+                    { title: "Membuat Homepage", duration: "07:53" },
+                    { title: "Membangun Detail Berita", duration: "20:14" },
+                    { title: "Mempercantik Halaman Home", duration: "11:57" },
+                    { title: "Mempercantik Halaman Detail", duration: "09:16" },
+                    { title: "Estimation Reading Time", duration: "10:42" },
+                    { title: "Setting SEO & Social Media Preview", duration: "12:47" },
+                    { title: "Integrasi Social Share Button", duration: "06:18" },
+                    { title: "Integrasi Disqus", duration: "07:38" },
+                    { title: "Integrasi Swiper Slider", duration: "06:00" },
+                    { title: "Deployment di Vercel", duration: "06:08" },
+                    { title: "Penutup", duration: "01:45" }
+                ]
+            }
+        ]
     }
 };
 
